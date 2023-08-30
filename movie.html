@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 0 1em;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+#search-input {
+    flex: 1;
+    padding: 0.5em;
+}
+
+#search-button {
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.results-container {
+    border: 1px solid #ddd;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: #fff;
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Movie Search</title>
+</head>
+<body>
+    <header><i>
+        <h1>Movie Search</h1></i>
+    </header>
+    <main>
+        <h2>Enter the movie name</h2>
+        <form id="search-form" action="/movieSubmit" method="post">
+        <div class="search-container">
+            <input type="text" id="movie" name="movieData" placeholder="Search for a movie...">
+            <button id="search-button">Get details</button>
+        </div>
+        </form>
+    </main>
+</body>
+</html>
